@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+         <form action="ControllerProduct" method="post">
+            <table border="0">
+                <tr>
+                    <td>Product ID</td>
+                    <td><input type="hidden" name="ProductID" value=""+request.getParameter("pid")+"" /></td>
+                </tr>
+                <tr>
+                    <td>Name</td>
+                    <td><input type="text" name="Name" value="" /></td>
+                </tr>
+                <tr>
+                    <td>Quantity</td>
+                    <td><input type="text" name="quantity" value="" /></td>
+                </tr>
+                <tr>
+                    <td>Price</td>
+                    <td><input type="text" name="Price" value="" /></td>
+                </tr>
+                <tr>
+                    <td>image</td>
+                    <td><input type="text" name="image" value="" /></td>
+                </tr>
+                <tr>
+                    <td>description</td>
+                    <td><input type="text" name="description" value="" /></td>
+                </tr>
+                <tr>
+                    <td>Status</td>
+                    <td> <input type="radio" name="st" value="1" checked />Enable
+                        <input type="radio" name="st" value="0" />disable</td>
+                </tr>
+                <tr>
+                    <td><b> Choose Cate id:</b></td>
+                    <td>
+                            <select name="Cate">
+                                <option value=""></option>
+                                <option value="audi" selected>Audi</option>
+                             </select>
+                        
+                        </td>
+                </tr>
+                <tr>
+                    <td><input type="submit"  value="Insert" /></td>
+                    <td><input type="reset"></td>
+                </tr>
+            </table>
+        </form>
+    </body>
+</html>
